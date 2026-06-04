@@ -24,7 +24,7 @@ spec:
     spec:
       containers:
         - name: flask-api
-          image: ghcr.io/rahmanhanan7/prophaze-assignment:main
+          image: ghcr.io/jaysreee/observability:main
           imagePullPolicy: Always
           ports:
             - containerPort: 5000

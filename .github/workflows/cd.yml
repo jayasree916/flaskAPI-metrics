@@ -19,7 +19,7 @@ jobs:  # <-- Added this required top-level key
 
       - name: Update image tag in deployment
         run: |
-          sed -i "s|hananpp/prophase:.*|hananpp/prophase:${{ github.sha }}|g" Kubernetes/deployment.yaml
+          sed -i "s|jaysreee/observability:.*|jaysreee/observability:${{ github.sha }}|g" Kubernetes/deployment.yaml
 
       - name: Apply Kubernetes manifests
         run: |
