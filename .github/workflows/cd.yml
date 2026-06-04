@@ -2,7 +2,7 @@ name: "CI/CD — Flask K8s API"
 
 on:
   push:
-    branches: [ main ]
+    branches: [ metrics ]
   pull_request:
     branches: [ main ]
 
@@ -11,7 +11,7 @@ jobs:  # <-- Added this required top-level key
     name: Deploy to K8s
     runs-on: self-hosted           # your local machine runner
     # needs: build                 # <-- NOTE: Commented this out because "build" job isn't defined in this file. 
-    if: github.ref == 'refs/heads/main'   # only on main branch
+    if: github.ref == 'refs/heads/metrics'   # only on metrics branch
 
     steps:
       - name: Checkout code
