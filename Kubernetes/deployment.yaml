@@ -24,7 +24,7 @@ spec:
     spec:
       containers:
         - name: flask-api
-          image: ghcr.io/jaysreee/observability:main
+          image: ghcr.io/jayasree916/flaskapi-metrics:metrics
           imagePullPolicy: Always
           ports:
             - containerPort: 5000
